@@ -602,11 +602,11 @@ header .icons #menu-bars {
     background: #fffed1;
 }
 
-.loader img {
+#loader img {
     width: 35rem;
 }
 
-.loader.fade-out {
+#loader.fade-out {
     top: 110%;
     opacity: 0;
 }

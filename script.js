@@ -58,7 +58,7 @@ var swiper = new Swiper(".review-slider", {
 });
 
 function loader() {
-    document.querySelector('.loader').classList.add('fade-out');
+    document.querySelector('#loader').classList.add('fade-out');
 }
 function fadeOut() {
     setInterval(loader, 4000);
