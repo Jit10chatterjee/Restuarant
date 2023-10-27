@@ -30,29 +30,6 @@ var swiper = new Swiper(".home-slider", {
     loop: true,
 });
 
-// var swiper = new Swiper(".review-slider", {
-//     spaceBetween: 30,
-//     centeredSlides: true,
-//     autoplay: {
-//         delay: 7500,
-//         disableOnInteraction: false,
-//     },
-//     loop: true,
-//     breakpoints: {
-//         0: {
-//             slidePerView: 1,
-//         },
-//         640: {
-//             slidePerView: 2,
-//         },
-//         768: {
-//             slidePerView: 2,
-//         },
-//         1024: {
-//             slidePerView: 3,
-//         },
-//     },
-// });
 var swiper = new Swiper(".review-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -79,3 +56,11 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+
+function loader() {
+    document.querySelector('.loader').classList.add('fade-out');
+}
+function fadeOut() {
+    setInterval(loader, 4000);
+}
+window.onload = fadeOut;
