@@ -92,7 +92,7 @@ header img {
 }
 
 header .logo {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--green);
 }
 
@@ -442,17 +442,17 @@ header .icons #menu-bars {
 }
 
 .review .slide {
-    padding: 2rem;
+    padding: 4rem;
     box-shadow: var(--box-shadow);
     border: 0.2rem solid rgba(0, 0, 0, .2);
-    border-radius: .5rem;
+    border-radius: 2.5rem;
     position: relative;
     background: #fff;
 }
 
 .review .slide .fa-quote-right {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 2rem;
     font-size: 6rem;
     color: #ccc;

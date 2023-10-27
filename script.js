@@ -20,7 +20,7 @@ var swiper = new Swiper(".home-slider", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-        delay: 2500,
+        delay: 7500,
         disableOnInteraction: false,
     },
     pagination: {
@@ -30,26 +30,52 @@ var swiper = new Swiper(".home-slider", {
     loop: true,
 });
 
+// var swiper = new Swiper(".review-slider", {
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     autoplay: {
+//         delay: 7500,
+//         disableOnInteraction: false,
+//     },
+//     loop: true,
+//     breakpoints: {
+//         0: {
+//             slidePerView: 1,
+//         },
+//         640: {
+//             slidePerView: 2,
+//         },
+//         768: {
+//             slidePerView: 2,
+//         },
+//         1024: {
+//             slidePerView: 3,
+//         },
+//     },
+// });
 var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    centeredSlides: true,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
-    loop: true,
     breakpoints: {
-        0: {
-            slidePerView: 1,
+        "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
         },
-        640: {
-            slidePerView: 2,
+        "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
-        768: {
-            slidePerView: 2,
+        "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
         },
-        1024: {
-            slidePerView: 3,
+        "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
         },
     },
 });
