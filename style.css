@@ -193,6 +193,62 @@ header .icons #menu-bars {
     font-size: 5rem;
 }
 
+#banner {
+    display: flex;
+    width: 100%;
+    height: 100rem;
+    position: relative;
+    background-image: url('image/cafe-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+#banner .banner-container {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+}
+
+#banner .banner-container .banner-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    justify-content: center;
+    background: #fff82caf;
+}
+
+#banner .banner-container .banner-content h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+#CafeName {
+    font-size: 6rem;
+    font-style: italic;
+    color: var(--green);
+}
+
+#banner .banner-container .banner-content p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.home h1 {
+    color: var(--green);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.home h3 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
 .home .home-slider .slide {
     display: flex;
     align-items: center;
@@ -666,6 +722,18 @@ header .icons #menu-bars {
         width: 90%;
         margin: 0 1rem;
     }
+
+    #banner .banner-container .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    #CafeName {
+        font-size: 2.5rem;
+    }
+
+    #banner .banner-container .banner-content p {
+        font-size: 1.5rem;
+    }
 }
 
 @media(max-width:450px) {
@@ -680,6 +748,18 @@ header .icons #menu-bars {
 
     .order form .inputBox .input {
         width: 100%;
+    }
+
+    #banner .banner-container .banner-content h1 {
+        font-size: 1.5rem;
+    }
+
+    #CafeName {
+        font-size: 2rem;
+    }
+
+    #banner .banner-container .banner-content p {
+        font-size: 1rem;
     }
 
 }
